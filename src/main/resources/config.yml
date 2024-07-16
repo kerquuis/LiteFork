@@ -18,9 +18,10 @@ mysql:
 # DISCORD BOT SETTINGS
 
 discord:
-  token: "MTI1MzI5NzYxMzY1MDkyMzU1MQ.Gn2cbX._rpW-92rpFBEzn2TKpbChForDEAMOLB7HwhBYk"
-  channelId: "1253717089072447598"
-  roleId: "Coming Soon..."
+  token: "YOUR_DISCORD_APP_TOKEN"
+  serverId: "STAFF_SERVER_ID"
+  channelId: "LOG_CHANNEL_ID"
+  roleId: "STAFF_ROLE_ID"
 
 embed:
   title: "{username} has {event} someone!"
