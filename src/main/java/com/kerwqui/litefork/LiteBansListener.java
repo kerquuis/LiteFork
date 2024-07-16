@@ -278,12 +278,10 @@ public class LiteBansListener extends JavaPlugin implements CommandExecutor, Lis
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        // Eklenecek kodları buraya yazabilirsiniz.
     }
 
     @EventHandler
-    public void onPlayerQuit(PlayerQuitEvent event) {
-        // Eklenecek kodları buraya yazabilirsiniz.
+    public void onPlayerQuit(PlayerQuitEvent event) {
     }
 
     private void removePoints(String username) throws SQLException {
