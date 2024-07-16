@@ -1,0 +1,55 @@
+# Merhaba ben Kerem ARIDOĞAN, LiteFork eklentisinin geliştiricisiyim.
+# LiteFork eklentisi kısaca sunucu yetkililerinin takibi için puanlama yapan LiteBans API kullanan bir sistemdir.
+# Eklentinin temeli İngilizce fakat ileriki güncellemeler ile Türkçe desteği gelecektir.
+# DEĞİSKENLER
+# {username} > Puanı alan yetkili
+# {event} > Yapılan cezalandırma türü
+# {eventId} > Veritabanına kaydolan veri numarası
+# PlaceHolderAPI
+# Geliştiriliyor.
+
+database_type: MySQL
+
+mysql:
+  url: jdbc:mysql://localhost:3306/litefork
+  username: root
+  password:
+
+# DISCORD BOT SETTINGS
+
+discord:
+  token: "MTI1MzI5NzYxMzY1MDkyMzU1MQ.Gn2cbX._rpW-92rpFBEzn2TKpbChForDEAMOLB7HwhBYk"
+  channelId: "1253717089072447598"
+  roleId: "Coming Soon..."
+
+embed:
+  title: "{username} has {event} someone!"
+  description: "Event ID: {eventId}"
+  color: "#FF0000"
+  buttonLabel: "Cancel"
+
+messages:
+  # MESSAGE LANGUAGE SETTINGS
+  unknownSubcommand: "&2&l[LiteFork] &cUnknown subcommand. Available subcommands: unpoints, reload"
+  onlyPlayer: "&2&l[LiteFork] &cThis command can only be used by players."
+  reloadedPlugin: "&2&l[LiteFork] &aThe plugin's files have been reinstalled."
+  notPermissions: "&2&l[LiteFork] &cYou don't have enough authority."
+  invalidUsageMessage: "&2&l[LiteFork] &cInvalid usage. Correct usage: /unpoints <username> <event_id>"
+  successMessage: "&2&l[LiteFork] &aPoints successfully removed!"
+  errorMessage: "&2&l[LiteFork] &cAn error occurred while processing your request."
+
+  # HELP COMMAND LANGUAGE SETTINGS
+  help:
+    - "&2&lLITEFORK PLUGIN COMMANDS"
+    - ""
+    - "&a/lf &8» &7Main command."
+    - "&a/lf reload &8» &7Refreshes plugin files."
+    - "&a/lf unpoints <username> <event_id> &8» &7It takon back the points given during penalty cancellation."
+    - "&a/lf see <username> &8» &7You view the official's score."
+    - "&f"
+    - "&a/lf testalert &8» &7Sends test message on Discord."
+    - "&f"
+    - "&aLiteFork &8» &7It is an authocer: kerwquising plugin powered by LiteBans. Producer: kerwquis"
+    - "&aDescription &8» &7The language b language support is coming soon...nglish, Turkish language support is coming soon..."
+    - "&aSocial &8» &7Discord: &ahttps://discord.gg/kerdev/"
+    - ""

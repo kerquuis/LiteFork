@@ -1,0 +1,33 @@
+name: LiteFork
+version: 1.0
+main: com.kerwqui.litefork.LiteBansListener
+api-version: 1.17
+author: kerwqui
+description: Minecraft server plugin for LiteBans integration with Discord notifications.
+
+depend: [LiteBans]
+
+commands:
+  unpoints:
+    description: Unpoints a user based on an event ID.
+    usage: /unpoints <username>
+    permission: litefork.unpoints
+  reload:
+    description: Reloads the plugin configuration.
+    usage: /reload
+    permission: litefork.admin
+  lf:
+    description: Main command for LiteFork with subcommands.
+    usage: /lf <subcommand>
+    permission: litefork.use
+
+permissions:
+  litefork.admin:
+    description: Permission to reload configuration.
+    default: op
+  litefork.unpoints:
+    description: Permission to use the unpoints command.
+    default: op
+  litefork.use:
+    description: Permission to use the lf command and its subcommands.
+    default: true
