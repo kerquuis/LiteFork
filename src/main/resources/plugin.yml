@@ -5,7 +5,8 @@ api-version: 1.17
 author: kerwqui
 description: Minecraft server plugin for LiteBans integration with Discord notifications.
 
-depend: [LiteBans]
+softdepent: [AdvancedBan, EssentialsX]
+depend: [LiteBans, PlaceholderAPI, LuckPerms]
 
 commands:
   unpoints:
