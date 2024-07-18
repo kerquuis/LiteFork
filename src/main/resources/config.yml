@@ -54,3 +54,12 @@ messages:
     - "&aDescription &8» &7The language b language support is coming soon...nglish, Turkish language support is coming soon..."
     - "&aSocial &8» &7Discord: &ahttps://discord.gg/kerdev/"
     - ""
+
+  testAlert:
+    - "&2&lLITEFORK TEST ALERT COMMANDS"
+    - ""
+    - "&a/lf testalert <file_name.yml> &8» &7Sending an announcement by pulling from the file path."
+    - "&a7lf testalert manuel <title> <color> <field> &8» &7Announcement sending system by pulling from the file path."
+    - ""
+    - "&aLiteFork &8» &7"
+
